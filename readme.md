@@ -3,7 +3,7 @@
 1. You put the estimator.py under the working directory.
 2. 
 
-```
+```python
 import estimator
 estimator.earlyStagePhysicalCheck(MODEL_FILE="cybsec-mlp-ready.onnx",MVAU_WWIDTH_MAX=80,TARGET_FPS=1000000)
 
@@ -52,7 +52,7 @@ total :
 
 3. rtl sim estimator
 
-```
+```python
 import estimator
 estimator.earlyStagePhysicalSim(FPGA_PART="xc7z020clg400-1",MODEL_FILE="cybsec-mlp-ready.onnx",MVAU_WWIDTH_MAX=80,TARGET_FPS=1000000)
 
@@ -215,7 +215,7 @@ StreamingFCLayer_Batch_3 :
 
 4. Use manual FIFO
 
-```
+```python
 estimator.earlyStagePhysicalFifoSim(FPGA_PART="xc7z020clg400-1",FIFO_FILE="manual_folding_config.json",MODEL_FILE="cybsec-mlp-ready.onnx",MVAU_WWIDTH_MAX=80,TARGET_FPS=1000000)
 
 ->
